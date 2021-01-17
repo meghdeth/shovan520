@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  max-width: 200px;
+  margin-left: 30%;
+  margin-top: 12%;
+}
+
+.brand img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  border: black 2px solid;
+}
+
+.brand .brand-label {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.brand .brand-label svg {
+  position: absolute;
+  left: -90%;
+  top: -90%;
+  height: 280%;
+  width: 280%;
+  pointer-events: none;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.brand .brand-label svg text {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.375px;
+  font-variation-settings: "wght" 650;
+  fill: #ffb400;
+  text-transform: uppercase;
+}
+
+.brand:hover .brand-label svg {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
